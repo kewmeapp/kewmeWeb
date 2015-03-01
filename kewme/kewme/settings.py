@@ -70,10 +70,11 @@ elif os.getenv('SETTINGS_MODE') == 'prod':
     # in production.
     DATABASES = {
         'default': {
-            'ENGINE': 'google.appengine.ext.django.backends.rdbms',
-            'INSTANCE': 'kewme01:kewme1',
+            'ENGINE': 'django.db.backends.mysql',
+            'HOST': '173.194.252.0', 
             'NAME': 'mainDB',
             'USER': 'root',
+            'PASSWORD': 'wenruima08',
         }
     }
 else:
